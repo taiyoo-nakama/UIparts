@@ -1,0 +1,126 @@
+.test{
+  color: #000;
+  a{
+    background: #fff;
+  }
+}
+.btn{
+  display: block;
+  padding: 20px;
+  width: 160px;
+  background: rgb(59, 138, 241);
+  text-align: center;
+  border-bottom: 4px solid rgb(12, 83, 131);
+  text-decoration: none;
+  color: #fff;
+  transition: 0s;
+  margin: 50px;
+}
+.btn:hover{
+  background: rgb(2, 74, 184);
+  transform: translate3d(0,4px,0);
+  transition: 0s;
+  border-bottom: none;
+}
+.top{
+  margin: 50px;
+}
+.top-return{
+  width: 100%;
+  height: 300px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.top-return-content{
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(#e66465,#9198e5);
+}
+.scroll-top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  background: #aaa;
+  opacity: 0.9;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.menu{
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  margin: 50px;
+}
+.menu-line-top,
+.menu-line-middle,
+.menu-line-bottom{
+  background-color: #000;
+  width: 100%;
+  display: inline-block;
+  height: 5px;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu-line-top{
+  top: 0;
+}
+.menu-line-middle{
+  top: 14px;
+}
+.menu-line-bottom{
+  bottom: 0;
+}
+menu.open span:nth-of-type(1){
+  transform: rotate(45deg);
+  top: 14px;
+}
+menu.open span:nth-of-type(2){
+  opacity: 0;
+}
+menu.open span:nth-of-type(3){
+  transform: rotate(-45deg);
+  top: 14px;
+}
+
+.tab{
+  width: 500px;
+}
+.tab-menu{
+  display: flex;
+}
+.tab-menu-item{
+  list-style: none;
+  border: 1px solid #000;
+  border-bottom: none;
+  padding: 5px 10px;
+  width: 100px;
+}
+.tab-menu-item:not(:first-child){
+  border-left: none;
+}
+.tab-menu-item.active{
+  color: #fff;
+  background: #000;
+}
+.tab-content{
+  border: 1px solid #000;
+  font-size: 30px;
+  height: 200px;
+}
+.tab-content-item{
+  display: none;
+}
+.tab-content-item.show{
+  display: block;
+}
